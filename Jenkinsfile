@@ -8,12 +8,12 @@ stages {
 stage('Build') {
 steps {
 sh 'echo Fase Build;sleep 7;echo Fase Build Terminada'
-  sh 'gradle --version'
+  sh 'cd ./complete;gradle jar'
 }
 }
 stage('Test'){
 steps {
-sh 'echo Fase Test;sleep 17;echo Fase Test Terminada'
+sh 'pwd'
 }
 }
 stage('Deploy') {
