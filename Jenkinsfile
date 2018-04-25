@@ -1,10 +1,14 @@
 
 pipeline {
 agent any
+  tool {
+    gradle "gradle-local"
+  }
 stages {
 stage('Build') {
 steps {
 sh 'echo Fase Build;sleep 7;echo Fase Build Terminada'
+  sh 'gradle --version"
 }
 }
 stage('Test'){
