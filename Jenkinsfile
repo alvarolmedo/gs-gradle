@@ -8,7 +8,7 @@ stages {
 stage('Build') {
 steps {
 sh 'echo Fase Build;sleep 7;echo Fase Build Terminada'
-  sh 'gradle --version"
+  sh 'gradle --version'
 }
 }
 stage('Test'){
