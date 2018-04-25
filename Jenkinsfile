@@ -2,6 +2,11 @@
 pipeline {
 agent any
 stages {
+stage('PreBuild') {
+steps {
+sh 'echo Fase PreBuild;sleep 1;echo Fase PreBuild Terminada'
+}
+}
 stage('Build') {
 steps {
 sh 'echo Fase Build;sleep 7;echo Fase Build Terminada'
