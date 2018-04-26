@@ -43,6 +43,7 @@ targetCompatibility = 1.8
 dependencies {
     compile "joda-time:joda-time:2.2"
     testCompile "junit:junit:4.12"
+    testRuntime "org.slf4j:slf4j-api:1.7.10"
 }
 // end::dependencies[]
 
